@@ -24,7 +24,8 @@
       "@my-be-app/balance-model": [
         "components/model/balance-model/src/index.ts"
       ],
-      "@my-be-app/admin": ["components/data/admin/src/index.ts"]
+      "@my-be-app/admin": ["components/data/admin/src/index.ts"],
+      "@my-be-app/dashboard": ["components/data/dashboard/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

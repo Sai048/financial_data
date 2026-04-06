@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from '@my-be-app/auth';
 import { AdminModule } from '@my-be-app/admin';
 import { FinancialModule } from '@my-be-app/financial';
+import { DashboardModule } from '@my-be-app/dashboard';
 
 @Module({
   imports: [
@@ -19,7 +20,8 @@ import { FinancialModule } from '@my-be-app/financial';
     }),
     AuthModule,
     AdminModule,
-    FinancialModule
+    FinancialModule,
+    DashboardModule
   ],
   controllers: [AppController],
   providers: [AppService],
