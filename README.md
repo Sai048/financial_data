@@ -1,101 +1,131 @@
-# MyBeApp
+# 🚀 Setup Instructions
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
-
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
-
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/nest?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-
-## Run tasks
-
-To run the dev server for your app, use:
-
-```sh
-npx nx serve my-be-app
+``` bash
+git clone <your-repo-url>
+cd <project-folder>
+npm install
+npm run start
 ```
 
-To create a production bundle:
+------------------------------------------------------------------------
 
-```sh
-npx nx build my-be-app
-```
+# 🔐 Sample Credentials
 
-To see all available targets to run for a project, run:
+Preloaded users available in the database:
 
-```sh
-npx nx show project my-be-app
-```
+### 👤 User
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+{
+  "email": "user@gmail.com",
+  "password": "4455"
+}
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-## Add new projects
+### 🛠️ Admin
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+{
+  "email": "admin@gmail.com",
+  "password": "4455"
+}
 
-Use the plugin's generator to create new projects.
 
-To generate a new application, use:
+### 📊 Analyst
 
-```sh
-npx nx g @nx/nest:app demo
-```
+{
+  "email": "analyst@gmail.com",
+  "password": "4455"
+}
 
-To generate a new library, use:
 
-```sh
-npx nx g @nx/node:lib mylib
-```
+### 👁️ Viewer
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+{
+  "email": "viewer@gmail.com",
+  "password": "4455"
+}
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-## Set up CI!
+------------------------------------------------------------------------
 
-### Step 1
+# 🆕 Create New User
 
-To connect to Nx Cloud, run the following command:
 
-```sh
-npx nx connect
-```
+{
+  "username": "User",
+  "email": "user@gmail.com",
+  "password": "4455"
+}
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
 
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+------------------------------------------------------------------------
 
-### Step 2
+# 💰 Add Financial Record
 
-Use the following command to configure a CI workflow for your workspace:
 
-```sh
-npx nx g ci-workflow
-```
+{
+  "type": "income",
+  "category": "Interest",
+  "amount": 500,
+  "description": "Monthly Interest"
+}
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-## Install Nx Console
+------------------------------------------------------------------------
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+# 🔐 Roles & Permissions
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## 🛠️ Admin
 
-## Useful links
+Access Level: Full Control
 
-Learn more:
+-   Create, update, and delete financial records\
+-   Manage users (create/update roles/status)\
+-   View all users' data\
+-   Access complete dashboard analytics
 
-- [Learn more about this workspace setup](https://nx.dev/nx-api/nest?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+------------------------------------------------------------------------
 
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## 📊 Analyst
+
+Access Level: Read + Insights
+
+-   View financial records\
+-   Access dashboard analytics\
+-   Analyze financial data
+
+------------------------------------------------------------------------
+
+## 👁️ Viewer
+
+Access Level: Read-Only
+
+-   View dashboard summary\
+-   View financial records
+
+------------------------------------------------------------------------
+
+## 👤 User
+
+Access Level: Personal Data Only
+
+-   Manage own financial records (CRUD)\
+-   View personal dashboard
+
+------------------------------------------------------------------------
+
+# 🎯 Summary
+
+  Role      Purpose
+  --------- ---------------------
+  Admin     Full system control
+  Analyst   Data insights
+  Viewer    Read-only
+  User      Personal finance
+
+------------------------------------------------------------------------
+
+# 📌 Notes
+
+-   Ensure `.env` is configured\
+-   Role-based access is enforced\
+-   Admin has full privileges
