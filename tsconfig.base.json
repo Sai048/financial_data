@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@my-be-app/auth": ["components/data/auth/src/index.ts"],
+      "@my-be-app/auth-model": ["components/model/auth-model/src/index.ts"],
+      "@my-be-app/financial-model": [
+        "components/model/financial-model/src/index.ts"
+      ],
+      "@my-be-app/financial": ["components/data/financial/src/index.ts"],
+      "@my-be-app/balance-model": [
+        "components/model/balance-model/src/index.ts"
+      ],
+      "@my-be-app/admin": ["components/data/admin/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
